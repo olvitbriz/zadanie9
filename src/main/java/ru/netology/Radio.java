@@ -36,6 +36,7 @@ public class Radio {
     }
 
 
+
     public void nextStation() {
         if (currentStation != 9) {
             currentStation++;
@@ -55,12 +56,12 @@ public class Radio {
     public void increaseVolume() {
         if (currentVolume != 10) {
             currentVolume = currentVolume + 1;
-        }
+        } else currentVolume=10;
     }
 
     public void decreaseVolume() {
         if (currentVolume != 0) {
             currentVolume = currentVolume - 1;
-        }
+        } else currentVolume=0;
     }
 }
